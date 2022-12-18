@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(210, 46%, 95%);
+  margin: 0;
+  padding: 0;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.container {
+  padding: 5% 3%;
+}
+
+#one {
+  background: #7541c8;
+  color: white;
+  position: relative;
+  z-index: 0;
+}
+
+#two {
+  background: #48556a;
+  color: white;
+}
+
+#three {
+  background: white;
+}
+
+#four {
+  background: #19212e;
+  color: white;
+}
+
+#five {
+  flex-basis: 30%;
+  background: white;
+}
+
+#responsive-con {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 68%;
+}
+
+.sec {
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+.sec p {
+  opacity: 70%;
+}
+
+#three,
+#five {
+    box-shadow: 5px 10px 18px rgba(0, 0, 0, 0.1);
+    color: #48556a;
+}
+
+.profile p {margin: 0;}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 3;
+}
+
+.profile .name {
+    opacity: 100%;
+    font-size: 1rem;
+}
+
+.profile img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#one .profile img {
+    border: 1px solid #ecf2f8;
+}
+
+#two .profile img,
+#three .profile img,
+#five .profile img {
+    border: 1px solid #cfcfcf;
+}
+
+#four .profile img {
+    border: 1px solid #7541c8;
+}
+
+.desc :nth-child(2) {
+    opacity: 50%;
+}
+
+.sec :nth-child(3) {
+    font-weight: 500;
+}
+
+.sec h4 {
+    margin-bottom: 20px;
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+#quote {
+    position: absolute;
+    right: 15%;
+    top: 0;
+    z-index: 1;
+}
+
+
+
+@media (min-width: 630px) {
+  .container,
+  #responsive-con,
+  #top,
+  #bottom {
+    display: flex;
+  }
+
+  #top,
+  #bottom {
+    flex-basis: 50%;
+  }
+
+  #one,
+  #four {
+    flex-basis: 76%;
+  }
+
+  #two,
+  #three {
+    flex-basis: 34%;
+  }
+
+  #one,
+  #two,
+  #three,
+  #four {
+    margin-right: 20px;
+  }
+
+  .container {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
+  #five {
+    flex-basis: 23%;
+  }
+
+  #responsive-con {
+    flex-direction: column;
+    flex-basis: 77%;
+  }
+}
